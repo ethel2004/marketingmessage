@@ -30,7 +30,7 @@ def generate_copy(product_name, product_features, product_benefits, target_audie
     """
 
     response = openai.ChatCompletion.create(
-        model="gpt-4o-mini",
+        model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a marketing copywriter."},
             {"role": "user", "content": prompt}
